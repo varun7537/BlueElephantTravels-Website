@@ -1,0 +1,9 @@
+export { Divider } from "./Divider";
+export { SectionHeader } from "./Sectionheader";
+export { ServiceCard } from "./Servicecard";
+export { ServiceGrid } from "./Servicegrid";
+export { HowItWorks } from "./Howitworks";
+export { WhyChooseUs } from "./Whychooseus";
+export { DestinationCard } from "./Destinationcard";
+export { PopularDestinations } from "./Populardestinations";
+export { BottomCTA } from "./Bottomcta";
