@@ -593,8 +593,8 @@ export default function Navbar() {
         transition={{ type: "spring", stiffness: 200, damping: 28 }}
         className="fixed left-1/2 z-50 w-[min(92%,720px)] -translate-x-1/2"
       >
-        <div className="flex items-center justify-between rounded-full bg-white/95 p-1.5 pl-3 shadow-lift ring-1 ring-black/5 backdrop-blur-md">
-          <Link href="/" className="flex items-center gap-2.5 pr-3">
+        <div className={`flex items-center rounded-full bg-white/95 p-1.5 shadow-lift ring-1 ring-black/5 backdrop-blur-md transition-all duration-300 ${scrolled ? 'justify-start gap-2' : 'justify-between pl-3'}`}>
+          <Link href="/" className={`flex items-center gap-2.5 ${scrolled ? 'order-2 pr-4' : 'order-1 pr-3'}`}>
             <div className="h-9 w-9 overflow-hidden rounded-lg">
               <img
                 src="/images/Logo.png"
@@ -610,7 +610,7 @@ export default function Navbar() {
           <button
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((o) => !o)}
-            className="grid h-11 w-11 place-items-center rounded-full bg-secondary text-white transition hover:bg-primary"
+            className={`grid h-11 w-11 place-items-center rounded-full bg-secondary text-white transition hover:bg-primary shrink-0 ${scrolled ? 'order-1' : 'order-2'}`}
           >
             <AnimatePresence mode="wait" initial={false}>
               {open ? (
