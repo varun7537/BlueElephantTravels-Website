@@ -21,4 +21,4 @@ export { DESTINATIONS } from "../../app/destinations/seasonentry/destination.dat
 export { REGIONS, REGION_ICONS, SEASON_DATA, SEASON_TABS, VIBES } from "../../app/destinations/seasonentry/filters.data";
 
 // Types
-export type { Region, Season, Destination, Vibe, SeasonEntry } from "../../app/destinations/components/types";
+export type { Region, SeasonKey, Destination, Vibe, SeasonEntry } from "../../app/destinations/components/types";
